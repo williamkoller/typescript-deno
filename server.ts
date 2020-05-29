@@ -7,7 +7,7 @@ import {
   getUser,
   updateUser,
   deleteUser
-} from "./controller/User"
+} from "./controller/User/index.ts"
 
 const app = new Application()
 
@@ -19,6 +19,6 @@ app
   .get("/user/:id", getUser)
   .put("/user/:id", updateUser)
   .delete("/user/:id", deleteUser)
-  .start({ port: 4000 })
+  .start({ port: 5000 })  
 
-console.log(`server listening on http://localhost:4000`);
+console.log(`server listening on http://localhost:5050`);

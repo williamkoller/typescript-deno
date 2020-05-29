@@ -1,4 +1,4 @@
-import "https://deno.land/x/dotenv/load.ts"
+import "https://deno.land/x/dotenv/mod.ts"
 import { init, MongoClient } from "https://deno.land/x/mongo@v0.6.0/mod.ts"
 
 await init();
